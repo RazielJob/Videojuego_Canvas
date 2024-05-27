@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asteroides</title>
+    <style>
+      html {
+        overflow: hidden;
+        height: 100%;
+        background: #191919;
+        width: 100%;
+      }
+
+      #canvas {
+        background: url("img/space.jpg") no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+
+      #canvas.playing {
+        cursor: url("img/aim_red.png") 17.5 17.5, auto !important;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        background-color: #1b1a1a;
+        padding: 8px 5px;
+      }
+
+      .logo-container {
+        margin-right: 20px;
+      }
+
+      .logo-container img {
+        width: 40px; /* ajusta el tamaño de la imagen según tus necesidades */
+        height: auto;
+        h1 {
+          margin: 0;
+          color: #f4f4f4 !important;
+        }
+        footer {
+          background-color: #f0e6e6; /* Color de fondo del footer */
+          color: #fff; /* Color del texto */
+          padding: 20px; /* Espaciado interno */
+          text-align: center; /* Alineación del texto */
+        }
+
+        .footer-content {
+          max-width: 800px; /* Ancho máximo del contenido */
+          margin: 0 auto; /* Centrar el contenido horizontalmente */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/Nave.png" alt="Logo de la página" />
+      </div>
+      <h1>Asteroides</h1>
+    </header>
+    <canvas id="canvas"></canvas>
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+        <p>Contacto: Raziel Job Vieyra Andrade</p>
+      </div>
+    </footer>
+    <script src="game.js"></script>
+  </body>
+</html>
